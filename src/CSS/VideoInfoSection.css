@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+.player {
+  height: auto;
+  max-width: 46%;
+  width:100%
+}
+.videoSecContainer {
+  height:70vh;
+  background: linear-gradient(to left, #E5EFFFff 0%, #E5EFFFff 60%, #F2FCFEff 50%, #F2FCFEff 100%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 35px;
+  border-top-left-radius: 20px; /* Adjust the value as needed */
+  border-bottom-left-radius: 20px; /* Adjust the value as needed */
+}
+.cardContainerMini {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+
+.miniCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  color: rgb(88, 88, 88);
+  text-align: center;
+  padding: 30px 10px;
+  position: relative;
+}
+
+.cardTop h1 {
+  font-size: 25px;
+}
+.cardTop span {
+  font-size: 3.7rem;
+  font-weight: 800;
+  margin: 10px 0;
+}
+.cardTop h3 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.cardBottom {
+  margin-top: 2rem;
+}
+.cardBottom h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.cardBottom p {
+  line-height: 1.7;
+  color: rgb(119, 118, 118);
+  font-weight: 100;
+}
+
+.cardBottom .icon {
+  font-size: 50px;
+  position: absolute;
+  bottom: 95%;
+}
+
+@media screen and (max-width: 1400px) {
+  .videoSecContainer{
+    height:auto;
+  }
+}
+
+@media screen and (max-width: 1026px) {
+
+  .miniCards {
+    padding-left: 10px;
+  }
+
+  .card {
+    padding: 20px 10px;
+  }
+
+  .cardTop h1 {
+    font-size: 16px;
+  }
+  .cardTop span {
+    font-size: 2.5rem;
+  }
+  .cardTop h3,
+  .cardBottom h3,
+  .cardBottom p {
+    font-size: 15px;
+  }
+
+  .cardBottom .icon {
+    font-size: 30px;
+    bottom: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .videoSecContainer,
+  .cardContainerMini {
+    flex-direction: column;
+  }
+  .player {
+    max-width: 100%;
+  }
+
+  .miniCards {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
+  .cardTop h1 {
+    font-size: 24px;
+  }
+  .cardTop h3 {
+    padding-bottom: 30px;
+    font-size: 16px;
+  }
+  .cardTop span {
+    font-size: 3rem;
+  }
+  .cardBottom h3 {
+    font-size: 22px;
+    padding-top: 20px;
+  }
+  .cardBottom p {
+    font-size: 18px;
+  }
+
+  .cardBottom .icon {
+    font-size: 60px;
+    bottom: 92%;
+  }
+}

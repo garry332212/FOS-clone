@@ -1,0 +1,32 @@
+.containerCards{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 3rem;
+padding: 0 40px;
+
+}
+
+.containerCards .icon{
+  font-size: 3rem;
+  color: #09c99cff;
+  margin-bottom: 10px;
+  transition: transform .2s ease-in-out;
+}
+.containerCards .icon:hover{
+  color: #2592e2ff;
+  transform: scale(1.2);
+}
+
+
+.containerCards h2{
+  color: #2592e2ff;
+  font-size: 20px;
+}
+
+.containerCards p{
+line-height: 1.5;
+color: #949494ff;
+font-weight: 100;
+}

@@ -1,0 +1,203 @@
+.ourStroyContainer {
+  padding: 30px;
+}
+
+.ourCompany,
+.ourValues,
+.bottomStoryConainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", Sans-serif;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+
+.ourTeam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.ourTeam p {
+  font-size: 16px;
+  color: #77787b;
+  padding: 8px 0;
+}
+
+.teamImages {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 45px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.ourTeam .teamImages img {
+  height: 200px;
+  margin: 1px;
+  border-radius: 180px;
+  transition: box-shadow 0.2s ease-in-out, transform 0.7s ease-in-out;
+}
+.ourTeam .teamImages img:hover {
+  box-shadow: 1px 1px 10px 8px #2592e2ff;
+  transform: scale(1.1);
+}
+
+.ourCompany .info,
+.ourValues .info {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ourCompany p,
+.ourValues p {
+  font-family: Arial, sans-serif;
+  padding: 12px 100px;
+  font-size: 16px;
+  width: 72%;
+  line-height: 1.7;
+  color: #303133;
+}
+.ourCompany p > span {
+  font-weight: bold;
+}
+
+.ourValues {
+  background-color: #f5f9ffff;
+  padding: 20px;
+  width: 100%;
+}
+.ourValues h2 {
+  margin-top: 10px;
+}
+
+.ourValues .info p {
+  width: 68%;
+  min-width: 1000px;
+}
+
+.cardsValues {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.cardsValues .cardV {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 25%;
+}
+
+.cardV .icon {
+  font-size: 3rem;
+  color: #1d51a6;
+  margin-bottom: 15px;
+  transition: transform .4s ease-in-out;
+}
+.cardV .icon:hover {
+  color: #2592e2ff;
+  transform: scale(1.3);
+}
+
+.cardV h3 {
+  color: #2592e2ff;
+  font-size: 1.25rem;
+}
+
+.cardV .infoikP {
+  padding: 10px;
+  color: #77787b;
+}
+
+.formArea{
+  width: 50%;
+  text-align: center;
+  margin: auto;
+ 
+}
+
+@media screen and (max-width: 1640px) {
+
+  .formArea{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .ourCompany p,
+  .cardsValues .cardV {
+    width: 100%;
+  }
+
+
+  .ourValues .info p {
+    padding: 0;
+    min-width: 0px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .cardsValues {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .cardV .infoikP {
+    padding: 10px;
+    color: #77787b;
+    width: 100%;
+  }
+  .ourCompany p,
+  .ourValues .info p {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .formArea{
+    width: 90%;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 746px) {
+    .ourCompany p,
+    .ourValues p {
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .teamImages {
+      padding: 15px;
+    }
+
+    .ourTeam .teamImages img {
+      padding: 10px;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .teamImages {
+      margin-top: 0;
+    }
+    .ourTeam .teamImages img {
+      padding: 10px;
+      height: 150px;
+    }
+  }
+}

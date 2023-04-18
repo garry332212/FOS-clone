@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 11rem;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #09c99cff;
+  margin-bottom: 3rem;
+}
+.container h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2592e2ff;
+  position: absolute;
+  margin-bottom: 5rem;
+}
+.container p {
+  margin-top: 2rem;
+  font-size: 20px;
+  color: #949494ff;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  background: #1e8fe2ff;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+button:hover {
+  color: #86a9df;
+  transition: scale(0.8);
+}
+
+.newContainer {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newContainer img {
+  height: auto;
+  width: 100%;
+  max-height: 40rem;
+  max-width: 1080px;
+  object-fit: scale-down;
+}
+
+@media screen and (max-width: 790px) {
+  .container {
+    padding: 20px 30px;
+    margin-top: 5rem;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+  .container h2 {
+    font-size: 20px;
+    margin-top: -80px;
+  }
+  .container p {
+    margin-top: 4rem;
+    font-size: 15px;
+    color: #949494ff;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .newContainer {
+    height: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container h1 {
+    margin-bottom: 50px;
+  }
+  .container h2 {
+    margin-bottom: 50px;
+  }
+
+ 
+}
